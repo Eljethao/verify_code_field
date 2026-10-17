@@ -1,3 +1,7 @@
+## 0.1.1
+
+* Screenshots and an animated demo in the README and on pub.dev.
+
 ## 0.1.0
 
 * Initial release: `VerifyCodeField`, a verification code (OTP) field drawn

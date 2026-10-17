@@ -4,6 +4,10 @@ A clean, responsive verification code (OTP) field for Flutter. Pick how many
 boxes you need — **6 by default**, or 4, 5, 8… — and the code from the SMS
 fills in by itself on Android and iOS.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Eljethao/verify_code_field/main/screenshots/demo.webp" width="411" alt="Typing a 6-digit code: the boxes fill one by one, then the code is verified">
+</p>
+
 - Any number of boxes with `length`; **6** by default
 - Boxes, gaps and text **shrink to fit** small phones and stay a comfortable
   size on tablets and desktop; large accessibility text never overflows
@@ -16,6 +20,8 @@ fills in by itself on Android and iOS.
 - Error message with a short shake, hidden characters, letter-and-digit codes
 - Only Flutter as a dependency (plus Google Play services' SMS library on
   Android)
+
+<img src="https://raw.githubusercontent.com/Eljethao/verify_code_field/main/screenshots/states.webp" width="794" alt="A wrong code in red with a message, a hidden code shown as dots, 4 boxes, and 8 boxes on a small phone">
 
 ## Install
 
@@ -94,9 +100,13 @@ VerifyCodeField(
 )
 ```
 
+<img src="https://raw.githubusercontent.com/Eljethao/verify_code_field/main/screenshots/styles.webp" width="391" alt="The three shapes: outlined, filled and underline">
+
 Anything you leave out comes from the app's `ColorScheme`: `primary` for the
 active box and cursor, `outline` / `outlineVariant` for borders, `error` for
-errors.
+errors. Light and dark mode follow your theme:
+
+<img src="https://raw.githubusercontent.com/Eljethao/verify_code_field/main/screenshots/themes.webp" width="822" alt="The same verification screen in light and dark mode">
 
 ## SMS auto-fill
 

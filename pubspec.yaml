@@ -2,9 +2,18 @@ name: verify_code_field
 description: >-
   Clean, responsive verification code (OTP) field with any number of boxes,
   easy delete and paste, and SMS code auto-fill on Android and iOS.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/Eljethao/verify_code_field
 issue_tracker: https://github.com/Eljethao/verify_code_field/issues
+screenshots:
+  - description: The same verification screen in light and dark mode.
+    path: screenshots/themes.webp
+  - description: Typing a 6-digit code; the boxes fill one by one, then the code is verified.
+    path: screenshots/demo.webp
+  - description: The three box shapes, outlined, filled and underline.
+    path: screenshots/styles.webp
+  - description: A wrong code message, a hidden code, 4 boxes, and 8 boxes on a small phone.
+    path: screenshots/states.webp
 topics:
   - otp
   - pin-code
