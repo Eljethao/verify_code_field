@@ -1,0 +1,50 @@
+name: verify_code_field
+description: >-
+  Clean, responsive verification code (OTP) field with any number of boxes,
+  easy delete and paste, and SMS code auto-fill on Android and iOS.
+version: 0.1.0
+repository: https://github.com/Eljethao/verify_code_field
+issue_tracker: https://github.com/Eljethao/verify_code_field/issues
+topics:
+  - otp
+  - pin-code
+  - verification-code
+  - sms
+  - autofill
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+  flutter: ">=3.32.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.eljethao.verify_code_field
+        pluginClass: VerifyCodeFieldPlugin
+      ios:
+        dartPluginClass: VerifyCodeFieldNoSms
+        dartFileName: src/no_sms_plugin.dart
+      macos:
+        dartPluginClass: VerifyCodeFieldNoSms
+        dartFileName: src/no_sms_plugin.dart
+      windows:
+        dartPluginClass: VerifyCodeFieldNoSms
+        dartFileName: src/no_sms_plugin.dart
+      linux:
+        dartPluginClass: VerifyCodeFieldNoSms
+        dartFileName: src/no_sms_plugin.dart
+      web:
+        pluginClass: VerifyCodeFieldNoSms
+        fileName: src/no_sms_plugin.dart

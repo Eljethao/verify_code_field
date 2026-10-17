@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Lets the plugin check that the SMS consent screen belongs to Google Play services (Android 11+ package visibility). -->
+    <queries>
+        <package android:name="com.google.android.gms" />
+    </queries>
+</manifest>
